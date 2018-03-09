@@ -73,9 +73,9 @@ public class ConverterController {
             return;
         }
 
-        double toMeter = inputNum/unit1.getValue();
+        double toMeter = inputNum*unit1.getValue();
 
-        double result = toMeter*unit2.getValue();
+        double result = toMeter/unit2.getValue();
 
         textField.setText(String.format("%.4f",result));
     }
