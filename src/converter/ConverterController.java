@@ -1,5 +1,4 @@
 package converter;
-
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.ComboBox;
@@ -7,6 +6,8 @@ import javafx.scene.control.TextField;
 
 /**
  *  UI controller for events and initializing components.
+ *
+ * @author Pornpavee Seri-umnuoy
  */
 public class ConverterController {
     @FXML
@@ -38,6 +39,9 @@ public class ConverterController {
         }
     }
 
+    /**
+     * Convert a distance from one unit to another.
+     */
     public void handleConvert(ActionEvent event) {
 
         String text1 = textfield1.getText().trim();
@@ -55,6 +59,9 @@ public class ConverterController {
 
     }
 
+    /**
+     * Clear everything in both text field.
+     */
     public void handleClear(ActionEvent event) {
         textfield1.setText("");
         textfield2.setText("");
@@ -62,6 +69,13 @@ public class ConverterController {
         textfield2.setStyle("-fx-text-inner-color: black;");
     }
 
+    /**
+     * Call handleConvert and show the result in another text field.
+     * @param input String user type in the text field.
+     * @param textField the another text field for show the result.
+     * @param unit1 init unit.
+     * @param unit2 unit user want to convert to.
+     */
     public void convert(String input,TextField textField,Length unit1,Length unit2){
 
         double inputNum = 0;

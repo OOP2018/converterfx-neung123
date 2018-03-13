@@ -1,11 +1,15 @@
 package converter;
-
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+/**
+ * Main Class for call and connect everything.
+ *
+ * @author Pornpavee Seri-umnuoy
+ */
 public class Main extends Application {
 
     @Override

@@ -1,7 +1,12 @@
 package converter;
 
+/**
+ * A Length enum for Length units. Meter is the standard unit.
+ *
+ * @author Pornpavee Seri-umnuoy
+ */
 public enum Length {
-    // you must write the enum members first, separated by comma
+
     Mile(1609.344),
     Kilometer(1000.0),
     Meter(1.0),
@@ -22,9 +27,12 @@ public enum Length {
         return this.value;
     }
 
+    /**
+     * for testing a Length enum.
+     */
     public static void main(String[] args) {
         Length[] lengths = Length.values();
-        // use the values
+
         for (Length x : lengths)
             System.out.println(x.toString() + " = " + x.getValue());
 
